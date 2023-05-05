@@ -51,7 +51,8 @@ class Calendar extends StatelessWidget {
               border: Border.all(
                 color: PRIMARY_COLOR,
                 width: 1.0,
-              )),
+              ),
+          ),
           defaultTextStyle: defalutTextStyle,
           weekendTextStyle: defalutTextStyle,
           selectedTextStyle: defalutTextStyle.copyWith(color: PRIMARY_COLOR),

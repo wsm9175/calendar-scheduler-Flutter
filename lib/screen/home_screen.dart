@@ -1,3 +1,4 @@
+import 'package:calendar_scheduler/component/scheduled_card.dart';
 import 'package:calendar_scheduler/component/today_banner.dart';
 import 'package:flutter/material.dart';
 import '../component/calendar.dart';
@@ -30,6 +31,16 @@ class _HomeScreenState extends State<HomeScreen> {
             TodayBanner(
               selectedDay: selectedDay,
               scheduleCount: 3,
+            ),
+            SizedBox(height: 8.0),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 8.0),
+              child: ScheduleCard(
+                startTime: 8,
+                endTime: 14,
+                content: '프로그래밍 공부',
+                color: Colors.red,
+              ),
             )
           ],
         ),
@@ -44,5 +55,4 @@ class _HomeScreenState extends State<HomeScreen> {
       this.focusedDay = selectedDay;
     });
   }
-
 }
